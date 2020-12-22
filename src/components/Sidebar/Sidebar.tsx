@@ -1,35 +1,12 @@
 import React from 'react';
-import { Layout, Menu } from 'antd';
+import { Menu } from 'antd';
 import {
     AppstoreFilled,
     CarryOutFilled
 } from '@ant-design/icons';
-import styled from '@emotion/styled'
 import SubMenu from 'antd/lib/menu/SubMenu';
 import { useHistory } from 'react-router-dom';
-
-const {Sider} = Layout;
-
-const StyledSider = styled(Sider)`
-    background: white;
-    .ant-layout-sider-children {
-        .ant-menu {
-            padding: 1rem;
-            .ant-menu-item-only-child {
-                padding-left: 1rem !important;
-            }
-            span, li {
-                font-weight: bold;
-            }
-            .ant-menu-item-selected {
-                background: #1890ff;
-                color: white;
-                border-radius: 0.3rem;
-            }
-        }
-    }
-`;
-
+import { StyledSider } from './styles';
 interface Category {
     key: string;
     title: string;
